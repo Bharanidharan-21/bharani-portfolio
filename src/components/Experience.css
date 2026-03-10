@@ -1,0 +1,156 @@
+.experience-section {
+    padding: 100px 0;
+}
+
+.experience-timeline {
+    max-width: 800px;
+    margin: 40px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.experience-item {
+    background: linear-gradient(135deg, var(--card-bg) 0%, #fcfdfd 100%);
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(42, 140, 140, 0.08);
+    border-top: 4px solid var(--accent-color);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.experience-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 45px rgba(42, 140, 140, 0.1);
+    border-color: rgba(42, 140, 140, 0.2);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.company-name {
+    font-size: 1.6rem;
+    color: var(--accent-color);
+    font-weight: 800;
+    font-family: var(--font-heading);
+}
+
+.experience-date {
+    font-family: var(--font-code);
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: var(--accent-color);
+    background-color: rgba(42, 140, 140, 0.08);
+    padding: 0.4rem 1rem;
+    border-radius: 30px;
+    border: 1px solid rgba(42, 140, 140, 0.1);
+}
+
+.internship-badge {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.job-role {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--text-main);
+}
+
+.experience-description-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+}
+
+.experience-description-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-size: 0.98rem;
+}
+
+.experience-description-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Tech Stack Row */
+.experience-tech-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--bg-secondary);
+}
+
+.tech-label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-main);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.tech-tag {
+    background-color: rgba(42, 140, 140, 0.05);
+    color: var(--text-main);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.experience-item:hover .tech-tag {
+    background-color: #FFFFFF;
+    border-color: rgba(42, 140, 140, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.tech-tag:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    transform: scale(1.05);
+}
+
+@media (max-width: 576px) {
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .company-name {
+        font-size: 1.4rem;
+    }
+}
